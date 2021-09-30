@@ -1,3 +1,5 @@
+/* Regole generali */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +9,8 @@
 body {
     font-family: sans-serif;
 }
+
+/* CSS relativo al main con pulsanti in alto a destra e finestra principale */
 
 main {
     height: calc(100vh - 70px);
@@ -18,11 +22,16 @@ main {
     position: absolute;
     top: 10px;
     right: 10px;
+    display: flex;
+    color: white;
+    z-index: 1;
+}
 
-    /* debug */
-    height: 30px;
-    width: 100px;
-    background-color: coral;
+.btn-schermata {
+    background-color: rgb(54, 54, 54);
+    padding: 5px 10px;
+    margin: 0 2px;
+    border-radius: 5px;
 }
 
 #blocco-principale {
@@ -33,19 +42,52 @@ main {
 }
 
 #blocco-principale .freccia {
+    color: white;
+    text-align: center;
+}
 
-    /* debug */
-    width: 50px;
-    height: 50px;
-    background-color: darksalmon;
+#blocco-principale .freccia i {
+    font-size: 40px;
+    color: grey;
+}
+
+#blocco-principale .freccia .fa-caret-right {
+    color: dodgerblue;
 }
 
 #schermi-partecipanti {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 90%;
+    max-height: 100%;
+    overflow-y: hidden;
+}
+
+.partecipante {
+    margin: 3px;
+    width: 200px;
+    height: 120px;
+    text-align: center;
+    position: relative;
 
     /* debug */
-    width: 800px;
-    height: 500px;
-    background-color: greenyellow;
+    
+    background-color: rgb(240, 92, 65);
+}
+
+.partecipante img {
+    object-fit: contain;
+    max-height: 100%;
+}
+
+.nome-partecipante {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 2px;
 }
 
 
