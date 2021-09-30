@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: sans-serif;
+}
+
 main {
     height: calc(100vh - 70px);
     background-color: black;
@@ -53,16 +57,45 @@ footer {
     background-color: rgb(54, 54, 54);
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    color: rgb(219, 219, 219);
 }
 
 .nav {
-    /* debug */
-    height: 100%;
-    width: 100px;
-    background-color: burlywood;
+    display: flex;
+    height: fit-content;
 }
 
-.nav.cx {
-    /* debug */
-    width: 600px;
+.nav.dx {
+    color: red;
+    background-color: rgb(92, 92, 92);
+    height: 100%;
+}
+
+.nav.dx .btn-barra {
+    line-height: 70px;
+    vertical-align: middle;
+}
+
+.btn-barra {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.btn-barra i {
+    font-size: 24px;
+}
+
+.btn-barra .fa-chevron-up {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.btn-barra .fa-desktop {
+    color: green;
+}
+
+.btn-barra.flex {
+    display: flex;
+    align-items: center;
 }
