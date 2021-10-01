@@ -18,6 +18,8 @@ main {
     position: relative;
 }
 
+
+/* CSS relativo ai due pulsanti in alto a destra con position "absolute" */
 #pulsanti-schermata {
     position: absolute;
     top: 10px;
@@ -34,6 +36,8 @@ main {
     border-radius: 5px;
 }
 
+
+/* CSS relativo al blocco principale */
 #blocco-principale {
     height: 100%;
     display: flex;
@@ -68,17 +72,13 @@ main {
     margin: 3px;
     width: 200px;
     height: 120px;
-    text-align: center;
     position: relative;
-
-    /* debug */
-    
-    background-color: rgb(240, 92, 65);
 }
 
 .partecipante img {
-    object-fit: contain;
-    max-height: 100%;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
 .nome-partecipante {
@@ -105,7 +105,6 @@ footer {
 
 .nav {
     display: flex;
-    height: fit-content;
 }
 
 .nav.dx {
